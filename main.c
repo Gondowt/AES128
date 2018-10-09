@@ -9,6 +9,7 @@
 
 uint8_t RCON[10] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x1B,0x36};
 
+// Code of S Box from https://en.wikipedia.org/wiki/Rijndael_S-box
 void initialize_aes_sbox(uint8_t sbox[256]) {
     uint8_t p = 1, q = 1;
 
